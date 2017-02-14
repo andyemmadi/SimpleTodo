@@ -1,0 +1,208 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ededed"
+    tools:context="com.ramu.simpletodo.CreateTodoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="18sp"
+                android:padding="3dp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:id="@+id/title_et"/>
+
+        </LinearLayout>
+
+        <!--<Switch-->
+            <!--android:text="Remind me on Day "-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/date_switch" />-->
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+                <TextView
+                android:text="Date "
+                android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:onClick="pickerVisibility"
+                    android:textSize="18sp"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:text="__ /__ /__"
+                    android:textColor="#0000f8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:id="@+id/date_text"
+                    android:onClick="pickerVisibility"
+                    android:textSize="18sp"
+                    android:padding="3dp"/>
+        </LinearLayout>
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker"
+                android:datePickerMode="spinner"
+                android:isScrollContainer="false"
+                android:calendarViewShown="false"
+                android:fitsSystemWindows="true"
+                android:visibility="gone"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                style="@android:style/Widget.DeviceDefault.DatePicker" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:text="Time "
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:onClick="pickerVisibility"
+                android:textSize="18sp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:text="__:__  am"
+                android:textColor="#0000f8"
+                android:gravity="right|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/time_text"
+                android:onClick="pickerVisibility"
+                android:textSize="18sp"
+                android:padding="3dp"/>
+
+        </LinearLayout>
+
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timePicker"
+                android:timePickerMode="spinner"
+                android:visibility="gone"
+                android:fitsSystemWindows="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Priority"
+                android:textSize="18sp"
+                android:padding="3dp"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_height="wrap_content"
+                android:id="@+id/priority_spinner"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:textSize="18sp"
+                android:padding="3dp"/>
+
+            <EditText
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:maxLines="5"
+                android:background="@android:color/transparent"
+                android:id="@+id/et_notes"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="18sp"
+                android:padding="3dp"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_spinner"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

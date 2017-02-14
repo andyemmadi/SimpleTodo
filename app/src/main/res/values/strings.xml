@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SimpleTodo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_create_ic">Create</string>
+
+  <string-array name="priority_level">
+      <item>Low</item>
+      <item>Medium</item>
+      <item>High</item>
+  </string-array>
+
+    <string-array name="status_level">
+        <item>ToDo</item>
+        <item>Completed</item>
+    </string-array>
+</resources>
