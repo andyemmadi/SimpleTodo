@@ -1,12 +1,19 @@
 # SimpleTodo
 
-following requirements are completed:
-- adding todo items to list
-- editing todo item of list
-- deleting todo items of list
-- persist across application restart and used Sqlite data for storing data
-- used fragment for editing and creating new todo item
+SimpleTodo Android Application, in which you can add the list of todo things to do. you can add, remove or edit the todo item.
 
+
+**Completed Features:**
+
+ * [x] *Required*: Add task
+ * [x] *Required*: Edit task
+ * [x] *Required*: Delete task
+ * [x] *Required*: Restore previously persisted items when app restarts 
+ * [x] *Extra*: Persist task items into SQLite instead of a text file  
+ * [x] *Extra*: Set priority levels for tasks and display within ListView item
+ * [x] *Extra*: Custom adapter for improved style of tasks within ListView
+ * [x] *Extra*: Editable notes field for attaching longer descriptions/notes per task
+ * [x] *Extra*: Dialog box prompts for user cancellation / deletion actions
 
 
 GIF walkthrough
