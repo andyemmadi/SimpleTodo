@@ -4,6 +4,10 @@ following requirements are completed:
 - adding todo items to list
 - editing todo item of list
 - deleting todo items of list
+- persist across application restart and used Sqlite data for storing data
+- used fragment for editing and creating new todo item
+
+
 
 GIF walkthrough
 
